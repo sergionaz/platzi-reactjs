@@ -1,21 +1,23 @@
-import Card from "./componentes/Card"
+import Card from "./components/Card"
 import './App.css'
 
 function App() {
   const items = ["React", "JavaScript", "Vite"];
 
+  // sintaxis JSX 
   return (
     <section>
-      <h1>¡Hola Mundo!</h1>
+      <div>¡Hola Mundo!</div>
+      <Card title="Card 1" description="Esto es una descripción" />
+      <Card title="Card 2" description="Esto es otra descripción" />
+      <Card title="Card 3" description="Tercera descripción" />
       <ul>
         {
-          items.map((item, index) => (
-            <li key={index}>{item}</li>
-          ))
+          items.map( (item, index) => (<li key={index}>{item}</li>) )
         }
       </ul>
-    </section>
-  );
+    </section>   
+  )
 }
 
 export default App
