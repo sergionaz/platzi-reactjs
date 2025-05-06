@@ -1,9 +1,9 @@
-import Card from "./components/Card/Card"
+import Text from "./components/Text/Text"
 
 function App() {
   return (
     <>
-      <Card />
+      <Text/>
     </>
   )
 }
